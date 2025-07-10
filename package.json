@@ -1,0 +1,45 @@
+{
+  "name": "okx-auto-swap-bot",
+  "version": "1.0.0",
+  "description": "Automated swap bot using OKX DEX on Arbitrum One",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "build": "echo 'Build completed - No build step required for Node.js'",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint . --ext .js",
+    "lint:fix": "eslint . --ext .js --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "audit:fix": "npm audit fix",
+    "validate": "node -e \"require('./config.js'); console.log('Config validation passed')\""
+  },
+  "keywords": [
+    "okx",
+    "dex",
+    "arbitrum",
+    "trading-bot",
+    "ethereum",
+    "defi"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "ethers": "^5.7.2",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "eslint": "^8.50.0",
+    "prettier": "^3.0.3",
+    "jest": "^29.7.0",
+    "@eslint/js": "^8.50.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
